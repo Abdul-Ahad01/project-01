@@ -1,0 +1,124 @@
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Navbar degins start here */
+
+.nav-logo{
+    text-align: left;
+}
+
+.nav-heading{
+    text-align: right;
+}
+
+.nav-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-menu a{
+    padding: 15px;
+    margin: 5px;
+}
+
+/* Navbar degins ends here */
+
+/* Profile degins start here */
+
+.profile .top-weather-icon{
+    position: absolute;
+    right: 100px;
+    width: 120px;
+    transition: width 2s, transform 7s;
+}
+
+.profile .top-weather-icon:hover{
+    width: 200px;
+}
+
+.profile .bottom-weather-icon{
+    position: absolute;
+    left: 100px;
+    width: 120px;
+    bottom: 20px;
+    transition: width 2s, transform 7s;
+}
+
+.profile .bottom-weather-icon:hover{
+    width: 200px;
+}
+
+.profile-bio p{
+    color: orangered;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+
+/* Profile degins ends here */
+
+
+/* About Me degins start here */
+
+.about-image img{
+    margin-top: 20px;
+}
+
+.about-desc P{
+    text-align: left;
+}
+
+/* About Me degins ends here */
+
+
+/* professional experience degins start here */
+
+.professional-experience{
+    padding: 1% 0%;
+}
+
+/* professional experience degins ends here */
+
+
+/* achievement contact degins start here */
+
+
+.contact input, textarea{
+    width: 100%;
+}
+
+.media-buttons .btn{
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+    
+}
+
+
+
+/* achievement contact degins ends here */
+
+
+
+/* footer degins start here */
+
+/* footer degins ends here */

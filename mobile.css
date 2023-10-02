@@ -1,0 +1,497 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    margin: 0;
+}
+
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 30 auto;
+    width: 70px;
+}
+
+/* Navbar degins start here */
+
+.navbar{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 1% 7%;
+}
+
+.nav-logo img{
+    width: 250px;
+    height: 200px;
+    border: 5px solid orangered;
+    border-radius: 50%;
+}
+
+.nav-heading h1{
+    font-size: 2.5rem;
+    padding: 15px;
+    margin: 0;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: bolder;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: tomato;
+}
+
+.nav-menu a:hover{
+    background-color: gray;
+    color: blue;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*For mobile */
+
+[class*="col"]{
+    width: 100%;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+/* Navbar degins ends here */
+
+/* Profile degins start here */
+
+.profile{
+    text-align: center;
+    padding: 130px 10px;
+    position: relative;
+}
+
+.profile .top-weather-icon{
+    position: absolute;
+    right: 65px;
+    top: 20px;
+    transition: transform 7s;
+}
+
+.profile .top-weather-icon:hover{
+    transform: rotate(360deg);
+}
+
+.profile .bottom-weather-icon{
+    position: absolute;
+    left: 65px;
+    bottom: 10px;
+    transition: transform 7s;
+}
+
+.profile .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+}
+.profile-bio h1{
+    font-size: 3rem;
+    font-family: 'Satisfy', cursive;
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px red;
+    
+}
+
+.profile-bio p{
+    color: gray;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 auto 20px auto;
+    width: 90%;
+}
+
+/* Profile degins ends here */
+
+
+/* About Me degins start here */
+
+.about-me{
+    background-color: teal;
+    text-align: center;
+    padding: 1% 7%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-me::after{
+
+    content: '';
+    display: table;
+    clear: both;
+}
+.about-image img{
+    width: 300px;
+    height: 320px;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.about-desc p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.about-desc p a{
+    text-decoration: none;
+    color: white;
+}
+    
+
+
+/* About Me degins ends here */
+
+
+
+
+/* professional experience degins start here */
+
+.professional-experience{
+
+    padding: 1% 0%;
+    
+}
+
+.professional-experience .card{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 3s;
+    height: 800px;
+    
+}
+
+.professional-experience .card:hover{
+    box-shadow: 2px 5px 8px 6px red;
+}
+
+.professional-experience::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.card-logo{
+    text-align: center;
+    
+}
+
+.card-logo img{
+    text-align: center;
+    margin-top: 10px;
+    width: 150px;
+}
+
+.card-title h3{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-style: italic;
+    background-color: #616161;
+    color: white;
+    padding: 5px;
+    
+
+}
+
+.round-img{
+    border: 5px solid blue;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.skills-containers {
+    padding-right: 35px;
+    
+   
+    
+}
+
+.skills-containers li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+}
+
+.skills-containers li::before{
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: coral;
+    border-radius: 1000px;
+}
+
+
+.skills-containers li::after{
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 0%;
+    height: 15px;
+    background-color: rgb(86, 255, 80);
+    border-radius: 1000px;
+
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.skills-containers li.html::after{
+    animation-name: html;
+
+}
+
+@keyframes html{
+    to{
+        width: 90%;
+    }
+
+
+}
+
+.skills-containers li.Css::after{
+    animation-name: Css;
+
+}
+
+@keyframes Css{
+    to{
+        width: 85%;
+    }
+
+
+}
+
+.skills-containers li.Bootstrap::after{
+    animation-name: Bootstrap;
+
+}
+
+@keyframes Bootstrap{
+    to{
+        width: 80%;
+    }
+
+
+}
+
+.skills-containers li.JavaScript::after{
+    animation-name: JavaScript;
+
+}
+
+@keyframes JavaScript{
+    to{
+        width: 75%;
+    }
+
+
+}
+
+.skills-containers li.JQuery::after{
+    animation-name: JQuery;
+
+}
+
+@keyframes JQuery{
+    to{
+        width: 70%;
+    }
+
+
+}
+
+.skills-containers li.Node-js::after{
+    animation-name: Node-js;
+
+}
+
+@keyframes Node-js{
+    to{
+        width: 65%;
+    }
+
+
+}
+
+.skills-containers li.Express-js::after{
+    animation-name: Express-js;
+
+}
+
+@keyframes Express-js{
+    to{
+        width: 60%;
+    }
+
+
+}
+
+.skills-containers li.GitHub::after{
+    animation-name: GitHub;
+
+}
+
+@keyframes GitHub{
+    to{
+        width: 55%;
+    }
+
+
+}
+
+.skills-containers li.React-js::after{
+    animation-name: React-js;
+
+}
+
+@keyframes React-js{
+    to{
+        width: 50%;
+    }
+
+
+}
+
+
+/* professional experience degins ends here */
+
+
+/* achievement contact degins start here */
+
+.achievement-contact{
+    background-color: turquoise;
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.achievement-contact::after{
+    content: '';
+    display: table;
+    clear: both;
+    
+}
+
+.contact{
+    padding: 1% 5%;
+    text-align: center;
+}
+
+.contact input, textarea{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+}
+
+.contact button{
+    border: none;
+    border-radius: 12px;
+    background-color: tomato;
+    color: black;
+    width: 80px;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    cursor:pointer;
+
+}
+
+.media-buttons .btn{
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+    
+}
+
+.media-buttons .btn:hover{
+    background-color: black;
+    
+}
+
+/* achievement contact degins ends here */
+
+
+
+/* footer degins start here */
+
+.footer{
+    background-color: black;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    
+}
+
+.footer::after{
+   content: '';
+   display: table;
+   clear: both;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    display: inline;
+    
+   
+}
+
+.footer-menu a:hover{
+    background-color: chartreuse;
+    text-decoration: underline;
+    color: brown;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+
+
+.footer-desc{
+    color: white;
+}
+
+
+/* footer degins ends here */
